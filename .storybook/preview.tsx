@@ -28,7 +28,7 @@ export const decorators = [
   (renderStory: any) => <ColorSchemeWrapper>{renderStory()}</ColorSchemeWrapper>,
   (renderStory: any) => 
   <MantineProvider>
-    <Container size={'xs'} className={firaMono.className}>
+    <Container size={'sm'} className={firaMono.className}>
       {renderStory()}  
     </Container>
   </MantineProvider>,
