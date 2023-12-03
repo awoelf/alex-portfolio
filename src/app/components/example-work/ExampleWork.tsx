@@ -31,9 +31,9 @@ const ExampleWork = (props: ExampleWorkInterface) => {
                     {props.url ? <a href={props.url}><BoxArrowUpRight /></a> : null}
                     {props.github ? <a href={props.github}><SiGithub size={18} /></a> : null}
                 </Group>
-                <Group>
-                    <Text>{props.dateStart}{props.dateEnd ? (` - ${props.dateEnd}`) : null}</Text>
-                </Group>
+                <Text>
+                    {props.dateStart}{props.dateEnd ? (` - ${props.dateEnd}`) : null}
+                </Text>
             </Flex>
             <Space h={'sm'} />
             <Text>{props.description}</Text>

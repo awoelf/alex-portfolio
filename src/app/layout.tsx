@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className={firaMono.className}>
+      <body  style={firaMono.style} className={'text-base'}>
         <MantineProvider>
           {children}
         </MantineProvider>
